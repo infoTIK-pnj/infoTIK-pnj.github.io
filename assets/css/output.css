@@ -1216,8 +1216,12 @@ input:checked + .toggle-bg {
 
 .mb-6 {
   margin-bottom: 1.5rem;
+.mb-6 {
+  margin-bottom: 1.5rem;
 }
 
+.me-4 {
+  margin-inline-end: 1rem;
 .me-4 {
   margin-inline-end: 1rem;
 }
@@ -1254,12 +1258,24 @@ input:checked + .toggle-bg {
   display: none;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
 .h-4 {
   height: 1rem;
 }
 
+.h-5 {
+  height: 1.25rem;
+}
+
 .h-6 {
   height: 1.5rem;
+}
+
+.h-8 {
+  height: 2rem;
 }
 
 .h-9 {
@@ -1310,8 +1326,16 @@ input:checked + .toggle-bg {
   width: 2.5rem;
 }
 
+.w-4 {
+  width: 1rem;
+}
+
 .w-5 {
   width: 1.25rem;
+}
+
+.w-64 {
+  width: 16rem;
 }
 
 .w-full {
@@ -1328,6 +1352,10 @@ input:checked + .toggle-bg {
 
 .max-w-screen-xl {
   max-width: 1280px;
+}
+
+.max-w-sm {
+  max-width: 24rem;
 }
 
 .max-w-sm {
@@ -1404,6 +1432,10 @@ input:checked + .toggle-bg {
   grid-template-columns: repeat(7, minmax(0, 1fr));
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -1474,12 +1506,12 @@ input:checked + .toggle-bg {
   white-space: nowrap;
 }
 
-.rounded-lg {
-  border-radius: 0.5rem;
-}
-
 .rounded {
   border-radius: 0.25rem;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 
 .rounded-e-lg {
@@ -1525,6 +1557,11 @@ input:checked + .toggle-bg {
   border-color: rgb(243 244 246 / var(--tw-border-opacity, 1));
 }
 
+.border-gray-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity, 1));
+}
+
 .border-gray-300 {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity, 1));
@@ -1558,6 +1595,11 @@ input:checked + .toggle-bg {
 .bg-gray-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity, 1));
+}
+
+.bg-gray-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity, 1));
 }
 
 .bg-gray-800 {
@@ -1650,6 +1692,10 @@ input:checked + .toggle-bg {
   padding: 0.25rem;
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
 .p-2\.5 {
   padding: 0.625rem;
 }
@@ -1669,6 +1715,11 @@ input:checked + .toggle-bg {
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .px-5 {
@@ -2090,10 +2141,6 @@ input:checked + .toggle-bg {
   background-color: rgb(31 41 55 / 0.5);
 }
 
-.dark\:bg-gray-900\/80:is(.dark *) {
-  background-color: rgb(17 24 39 / 0.8);
-}
-
 .dark\:bg-gray-900:is(.dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity, 1));
@@ -2134,14 +2181,14 @@ input:checked + .toggle-bg {
   background-color: rgb(75 85 99 / var(--tw-bg-opacity, 1));
 }
 
-.dark\:hover\:bg-gray-800:hover:is(.dark *) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(31 41 55 / var(--tw-bg-opacity, 1));
-}
-
 .dark\:hover\:bg-gray-700:hover:is(.dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity, 1));
+}
+
+.dark\:hover\:bg-gray-800:hover:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity, 1));
 }
 
 .dark\:hover\:text-blue-500:hover:is(.dark *) {
@@ -2233,6 +2280,10 @@ input:checked + .toggle-bg {
     margin-inline-end: 1.5rem;
   }
 
+  .md\:me-6 {
+    margin-inline-end: 1.5rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -2257,6 +2308,10 @@ input:checked + .toggle-bg {
     flex-direction: row;
   }
 
+  .md\:flex-col {
+    flex-direction: column;
+  }
+
   .md\:space-x-8 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(2rem * var(--tw-space-x-reverse));
@@ -2265,10 +2320,6 @@ input:checked + .toggle-bg {
 
   .md\:border-0 {
     border-width: 0px;
-  }
-
-  .md\:bg-transparent {
-    background-color: transparent;
   }
 
   .md\:bg-white {
@@ -2322,11 +2373,6 @@ input:checked + .toggle-bg {
   .md\:dark\:bg-gray-900:is(.dark *) {
     --tw-bg-opacity: 1;
     background-color: rgb(17 24 39 / var(--tw-bg-opacity, 1));
-  }
-
-  .md\:dark\:text-blue-500:is(.dark *) {
-    --tw-text-opacity: 1;
-    color: rgb(63 131 248 / var(--tw-text-opacity, 1));
   }
 
   .md\:dark\:hover\:bg-transparent:hover:is(.dark *) {
