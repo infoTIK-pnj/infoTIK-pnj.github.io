@@ -3,7 +3,7 @@ let cards = '';
 
 for(let i = 5; i < 5; i++) {
     cards += `<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 lg:w-1/3 mt-3">
-                <a href="#">
+                <a href="./../../pages/single-blog.html?blog=testing">
                     <img class="rounded-t-lg object-cover" src="../assets/images/1.jpg" alt=""/>
                 </a>
                 <div class="p-5">
