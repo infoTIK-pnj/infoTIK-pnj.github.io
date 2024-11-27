@@ -21,7 +21,8 @@ const renderData = async () => {
 
     console.log(singleData);
 
-    const emptyContainer = document.getElementById('empty-container');
+    const contentTitle = document
+
     let tester = ` <h1>${singleData[0].judul}</h1> `;
     let content = singleData[0].konten
     emptyContainer.innerHTML = content;
