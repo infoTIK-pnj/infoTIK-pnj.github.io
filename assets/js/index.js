@@ -10,7 +10,6 @@ const fetchData = async () => {
 
 const renderData = async () => {
     const data = await fetchData();
-    console.log(data);
 
     const contentContainer = document.getElementById('content-container');
     let cards = ``

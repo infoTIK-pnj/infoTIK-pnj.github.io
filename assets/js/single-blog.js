@@ -7,6 +7,7 @@ const fetchData = async () => {
         console.log(error);
     }
 }
+
 const renderData = async () => {
     const data = await fetchData();
     const queryString = window.location.search;
