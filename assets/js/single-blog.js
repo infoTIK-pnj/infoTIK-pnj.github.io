@@ -19,13 +19,17 @@ const renderData = async () => {
         }
     });
 
-    console.log(singleData);
+    const {judul, konten, image} = singleData[0];
+    console.log(judul);
 
-    const contentTitle = document
+    const contentTitle = document.getElementById('content-title');
+    const content = document.getElementById('content');
+    const contentThumbnail = document.getElementById('image-content');
 
-    let tester = ` <h1>${singleData[0].judul}</h1> `;
-    let content = singleData[0].konten
-    emptyContainer.innerHTML = content;
+    contentThumbnail.src = image;
+    contentTitle.innerHTML = judul; 
+    content.innerHTML = konten;
+
 }
 
 renderData();
